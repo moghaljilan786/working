@@ -1,0 +1,26 @@
+## reference code 1
+
+
+st="Hi i am a python developer. i have 3 years of experience."
+st1="Hi i am a python developer. i have 3 years of work experience"
+
+lst1=st.split(".")
+lst2=st1.split(".")
+for i,j in zip(lst1,lst2):
+    if i == j:
+        print(i,"\n",j)
+    else:
+        print("there is no common substrings")
+
+
+
+## reference code 2
+
+lst3=st.split(" ")
+lst4=st1.split(" ")
+
+for i,j in zip(lst3,lst4):
+    if i==j:
+        print(i)
+    else:
+        print("there is no common substring")
